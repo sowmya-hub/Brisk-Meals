@@ -1,0 +1,126 @@
+{% extends 'base.html' %} {% block body %} {% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}" />
+
+
+
+<section id="contact" class="section-padding my-2">
+  <div class="container">
+    <div class="row">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/random/1020x900?restaurant" class="d-block w-100" class="tales"
+              alt="...">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row my-2">
+      <div class="col-md-12 text-center">
+        <h1 class="header-h">Book Your table</h1>
+        <p class="header-p text-light">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy <br />nibh euismod tincidunt ut laoreet dolore magna
+          aliquam.
+        </p>
+      </div>
+    </div>
+    <div class="row msg-row">
+      <div class="col-md-4 col-sm-4 mr-15">
+        <div class="media-2">
+          <div class="media-left">
+            <div class="contact-phone bg-1 text-center">
+
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="dark-blue regular text-light">
+              <i class="fas fa-phone fa-1x text-warning"></i>Phone Numbers
+            </h4>
+            <p class="light-blue regular alt-p">
+              +440 875369208 -
+              <span class="contacts-sp">Phone Booking</span>
+            </p>
+          </div>
+        </div>
+        <div class="media-2">
+          <div class="media-left">
+            <div class="contact-email bg-14 text-center">
+              </span>
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="dark-blue regular text-light"><i class="fas fa-clock fa-1x text-warning"></i>Opening Hours</h4>
+            <p class="light-blue regular alt-p">
+              Monday to Friday 08.00 - 22:00
+            </p>
+            <p class="light-blue regular alt-p">
+              Saturday and Sunday 09:00 - 23.00
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-8">
+        <form action="" method="post" role="form" class="contactForm">
+          {% csrf_token %}
+          <div class="col-md-6 col-sm-6 contact-form">
+            <div class="form-group label-floating is-empty">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="date" class="form-control label-floating is-empty" name="date" id="date" placeholder="Date"
+                data-rule="required" data-msg="This field is required" />
+              <div class="validation"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 contact-form pad-form">
+            <div class="form-group">
+              <input type="email" class="form-control label-floating is-empty" name="email" id="email"
+                placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 contact-form">
+            <div class="form-group">
+              <input type="time" class="form-control label-floating is-empty" name="time" id="time" placeholder="Time"
+                data-rule="required" data-msg="This field is required" />
+              <div class="validation"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control label-floating is-empty" name="phone" id="phone"
+                placeholder="Phone" data-rule="required" data-msg="This field is required" />
+              <div class="validation"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control label-floating is-empty" name="people" id="people"
+                placeholder="No. of People" data-rule="required" data-msg="This field is required" />
+              <div class="validation"></div>
+            </div>
+          </div>
+          <div class="col-md-12 contact-form">
+            <div class="form-group label-floating is-empty">
+              <textarea class="form-control" name="message" rows="5" rows="3" data-rule="required"
+                data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+          </div>
+          <div class="col-md-12 btnpad">
+            <div class="contacts-btn-pad">
+              <button class="contacts-btn">Book Table</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock body %}
