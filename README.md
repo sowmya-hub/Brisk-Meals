@@ -1,5 +1,5 @@
 # Brisk-Meals
-A web-based application that enables multiple users to place orders at a restaurant and customise their services.
+A web-based application that enables users to place orders at a restaurant and customise their services.
 
 # Features
 1. Lets users browse among occasions to choose their meal for
