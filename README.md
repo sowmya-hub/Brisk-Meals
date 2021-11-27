@@ -15,9 +15,8 @@ A web-based application that enables users to place orders at a restaurant and c
 1. Django Framework
 2. Bootstrap
 ```
-### Landing page that users can interact with
 
-<img width="779" alt="image" src="https://user-images.githubusercontent.com/52818452/143528174-cc8a389f-e4cb-4c90-ab11-00328386d10a.png">
+
 
 
 
