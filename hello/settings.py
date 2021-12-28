@@ -1,4 +1,5 @@
 import os
+import sys
 from django.contrib.messages import constants as messages
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -10,7 +11,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
+    'myapp',
     'myapp.apps.MyappConfig',
+    'django_messages'
+    'django_messages'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
